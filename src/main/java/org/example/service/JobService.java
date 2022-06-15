@@ -4,7 +4,10 @@ import org.example.pojo.JobInfo;
 import org.quartz.SchedulerException;
 
 import java.util.Map;
-
+/**
+ * @author: ada
+ * @date: 2022/06/13
+ **/
 public interface JobService {
     /**
      * create a Job
