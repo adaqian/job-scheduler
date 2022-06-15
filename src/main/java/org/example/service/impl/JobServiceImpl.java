@@ -22,7 +22,7 @@ public class JobServiceImpl implements JobService {
 
     public void createJob(JobInfo jobInfo)throws ClassNotFoundException, SchedulerException{
         Trigger trigger = null;
-        if (jobInfo.getInterval() ==  null) { //one time
+        if (jobInfo.getInterval() ==  null || jobInfo.getInterval() == 0) { //one time
             trigger = TriggerBuilder.newTrigger().withIdentity(jobInfo.getJobName())
                     .withSchedule(SimpleScheduleBuilder.simpleSchedule())
 //                .startAt(quartzBean.getStartTime())
