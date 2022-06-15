@@ -42,7 +42,7 @@ a job scheduler sample based on springboot and quartz
 docker pull registry.cn-hangzhou.aliyuncs.com/adaqian/job-scheduler:latest
 # Demo
 There is an online demo to access:
-`https://adaqian.azurewebsites.net/swagger-ui.html#/job-controller`
+https://adaqian.azurewebsites.net/swagger-ui.html#/job-controller
 # Some extra things
 - We can add JobListener to monitor job execution,such as timeout detection, retry.
 - We can consider integrating redis to improve concurrency and make the interaction faster.
