@@ -41,5 +41,5 @@ a job scheduler sample based on springboot and quartz
 # Pull image
 docker pull registry.cn-hangzhou.aliyuncs.com/adaqian/job-scheduler:latest
 # Some extra things
-- We can JobListener to monitor job execution,such as timeout detection, retry.
+- We can add JobListener to monitor job execution,such as timeout detection, retry.
 - We can consider integrating redis to improve concurrency and make the interaction faster.
