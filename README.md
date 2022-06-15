@@ -1,5 +1,5 @@
 # job-scheduler
-a job scheduler sample based on springboot and quartz
+a job scheduler based on springboot and quartz
 # Features
 * Provides rest Api to Create/Read/Update/Delete jobs to run.
 * Supports one time execution and repetitive executions triggered at a fixed interval,
