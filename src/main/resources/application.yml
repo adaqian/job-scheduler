@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sql.wsfdb.cn:3306/adaqianadademo?userUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: adaqianadademo
+    password: ada001
+    #连接池
+    hikari:
+      pool-name: DataHikariCP
+      minimum-idle: 5
+      idle-timeout: 1800000
+      maxmum-pool-size: 10
+      auto-commit: true
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  type-aliases-package: org.example.jobscheduler.pojo
+
+logging:
+  level:
+    org.example.quartz: debug
